@@ -42,3 +42,112 @@ header::after {
     right: 0;
     margin-right: 10px;
 }
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.button {
+    background-color: red;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.header-content p {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.header-content .button {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 1.5rem 2rem;
+}
+
+/* TABS */
+
+.tabs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    text-align: center;
+    gap: 300px;
+    background-color: #191919;
+    color: #999;
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs div:hover{
+    color:white;
+    cursor:pointer;
+}
+
+.tab-border {
+    border-bottom: 4px solid red;
+}
+
+.tab-icon {
+    width: 200px;
+}
+
+/* TAB CONTENT */
+
+.tab-content {
+    width: 70%;
+    margin: auto;
+}
+
+.tab-content-item {
+    display: none;
+}
+
+.show {
+    display: grid;
+    justify-content: center;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+}
+
+.tab-content img {
+    width: 100%
+}
+
+/* TAB 1 CONTENT */
+
+.tab-1-content-inner {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+/* TAB 2 CONTENT */
+
+.tab-2-content-top {
+    text-align: center;
+}
+
+.tab-2-content-bottom {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+}
