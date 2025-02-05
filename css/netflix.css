@@ -12,6 +12,7 @@ header {
     height: 80vh;
     width: 100%;
     position: relative;
+    top: 15px;
 }
 
 /* extra element plaatsen op het EINDE van de header tag */
@@ -28,6 +29,9 @@ header::after {
     /* het parent element met een position, in dit geval */
     /* de header tag die we position relative gegeven hebben */
     top: 0;
+    /* extra schaduw aan de randen geven */
+    box-shadow: inset 120px 100px 250px #000,
+                inset -120px -100px 250px #000;
 }
 
 #header-top {
@@ -49,4 +53,30 @@ header::after {
     /* zowel display block als margin auto zijn hier nodig */
     display: block;
     margin: auto;
+}
+
+/* link in header-top verplaatsen */
+#header-top a {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+/* styling voor alle elementen met class button */
+.button {
+    background-color: red;
+    color: white;
+    /* lijn weg onder link */
+    text-decoration: none;
+    /* afgeronde hoeken */
+    border-radius: 5px;
+    /* meer ruimte rondom de inhoud tot aan de rand van het element */
+    /* eerste cijfer boven en onder */
+    /* tweede cijfer links en rechts */
+    padding: 7px 15px;
+}
+
+/* hover effectje */
+.button:hover {
+    opacity: 0.8;
 }
