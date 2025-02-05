@@ -102,3 +102,21 @@ header::after {
     text-transform: uppercase;
     padding: 1.5rem 2rem;
 }
+
+/* styling voor tab icons */
+#tabs {
+    /* drie kolommen met automatische breedte */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* centreren */
+    justify-items: center;
+    text-align: center;
+    /* extra ruimte tussen kolommen */
+    gap: 300px;
+    /* achtergrondkleur voor volledige section/lijn */
+    background-color: #191919;
+    /* kleur voor icoontjes zelf en tekst */
+    color: #999;
+    /* extra vulling bovenaan */
+    padding-top: 15px;
+}
