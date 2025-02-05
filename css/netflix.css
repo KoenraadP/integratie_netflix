@@ -1,0 +1,52 @@
+/* styling voor volledige pagina */
+html {
+    background-color: black;
+    /* tekstkleur --> color */
+    color: white;
+    /* lettertype aanpassen */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: url("../images/background.jpg");
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+
+/* extra element plaatsen op het EINDE van de header tag */
+header::after {
+    position: absolute;
+    /* blanco content, er moet eigenlijk niets in staan */
+    content: "";
+    /* rgba --> laatste element is de transparency */
+    background: rgba(0,0,0,0.6);
+    /* volledige header bedekken */
+    width: 100%;
+    height: 100%;
+    /* starten 0 pixels vanaf de bovenkant van */
+    /* het parent element met een position, in dit geval */
+    /* de header tag die we position relative gegeven hebben */
+    top: 0;
+}
+
+#header-top {
+    /* z-index werkt enkel op elementen */
+    /* met een specifieke position eigenschap */
+    position: relative;
+    z-index: 1;
+}
+
+#header-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* img stylen die in header-top staat */
+#header-top img {
+    width: 170px;
+    /* centreren */
+    /* zowel display block als margin auto zijn hier nodig */
+    display: block;
+    margin: auto;
+}
