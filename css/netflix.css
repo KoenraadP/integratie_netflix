@@ -133,3 +133,48 @@ header::after {
     /* cursor veranderen */
     cursor: pointer;
 }
+
+/* rand voorzien voor class tab-border */
+.tab-border {
+    border-bottom: 4px solid red;
+}
+
+/* tab-icons breder maken */
+/* de rand zal hierdoor ook breder worden */
+.tab-icon {
+    width: 200px;
+}
+
+/* CSS voor volledige tab content section */
+#tab-content {
+    width: 70%;
+    margin: auto;
+}
+
+/* alle tab-content-items op 'onzichtbaar' zetten */
+.tab-content-item {
+    display: none;
+}
+
+/* zorgen met de show class dat één element toch zichtbaar is */
+.show {
+    display: grid;
+    justify-content: center;
+}
+
+/* text-lg class instellen */
+/* om tekst groter te maken */
+.text-lg {
+    font-size: 1.5rem;
+}
+
+/* indeling van tab-1-content aanpassen */
+.tab-1-content-inner {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+#tab-1-content img {
+    width: 100%;
+}
