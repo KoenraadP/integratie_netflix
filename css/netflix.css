@@ -37,6 +37,7 @@ header::after {
 #header-top {
     /* z-index werkt enkel op elementen */
     /* met een specifieke position eigenschap */
+    /* zorgt er voor dat element 'voor' een ander element gaat staan */
     position: relative;
     z-index: 1;
 }
