@@ -178,3 +178,49 @@ header::after {
 #tab-1-content img {
     width: 100%;
 }
+
+/* CSS voor tab 2 content */
+/* items in content-bottom naast elkaar zetten */
+#tab-2-content-bottom {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+/* afbeeldingen doen resizen */
+/* op basis van de grootte van hun 'container' */
+#tab-2-content img {
+    width: 100%;
+}
+
+/* tekst er boven aanpassen */
+#tab-2-content-top {
+    text-align: center;
+}
+
+/* TAB 3 CONTENT */
+
+table {
+	margin-top: 2rem;
+	border-spacing: 0;
+}
+
+thead th {
+	text-transform: uppercase;
+	padding: 0.8rem;
+}
+
+tbody tr td {
+	padding: 1.2rem;
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background: #222;
+}
+
+.text-center {
+    text-align: center;
+}
